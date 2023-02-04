@@ -1,0 +1,331 @@
+.container .central header {
+  padding-top: 30px;
+
+  border-bottom: 2px solid #ffffff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .central header .logo {
+  width: 50px;
+  height: 50px;
+  background-color: brown;
+
+  border-radius: 50%;
+}
+
+.container .central header nav ul {
+  display: flex;
+  z-index: 100;
+}
+
+.container .central header nav ul li {
+  padding: 20px 15px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.container .central header nav ul li a {
+  color: #ffffff;
+}
+
+.container .central header nav ul li:hover {
+  border-bottom: 3px solid brown;
+}
+
+.container .central header .pesquisa {
+  flex-basis: 20%;
+
+  display: flex;
+  justify-content: space-between;
+
+  flex-direction: row-reverse;
+}
+
+.container .central header .pesquisa img {
+}
+
+.container .central header .pesquisa input {
+  border: none;
+  background: none;
+  outline: none;
+
+  text-align: center;
+  color: #ffffff;
+}
+
+.container .central header .pesquisa input:hover {
+  border-bottom: 2px solid brown;
+}
+
+/* trabalhando com banner */
+
+.container .central section.banner {
+  padding-top: 10rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.container .central section.banner div.cima {
+  padding: 20px 0px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .central section.banner .cima .travel {
+  flex-basis: 60%;
+}
+
+.container .central section.banner .cima .travel h1 {
+  font-weight: 700;
+
+  font-size: 5rem;
+
+  text-transform: uppercase;
+
+  margin-bottom: 1.5rem;
+}
+
+.container .central section.banner .cima .travel p {
+  width: 50%;
+
+  line-height: 1;
+}
+
+.container .central section.banner .cima .listas {
+  width: 20%;
+  height: 400px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.container section.banner .cima .listas .link nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.container section.banner .cima .listas .link nav li {
+  font-size: 1.2rem;
+  position: relative;
+  transition: 0.5s;
+  left: 0;
+}
+
+.container section.banner .cima .listas .link nav li:hover {
+  left: -20px;
+}
+
+.container section.banner .cima .listas .link nav li::after {
+  content: '';
+  position: absolute;
+  width: 113px;
+  height: 1px;
+  left: calc(100% + 12px);
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+}
+
+.container .central section.banner .baixo {
+  padding: 30px 0px;
+}
+
+.container .central section.banner .baixo .cards {
+  display: flex;
+}
+
+.container .central section.banner .baixo .cards .card {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+
+  border-bottom: 1.5px solid #ffffff8f;
+}
+
+.container .central section.banner .baixo .cards .card:hover {
+  border-bottom: 2px solid brown;
+}
+
+.container
+  .central
+  section.banner
+  .baixo
+  .cards
+  .card:hover
+  > .card-svg
+  g
+  path {
+  fill: #ff0000 !important;
+}
+
+.container
+  .central
+  section.banner
+  .baixo
+  .cards
+  .card:hover
+  > .card_text
+  .card-svg-two
+  g
+  path {
+  fill: #ff0000 !important;
+}
+
+.container .central section.banner .baixo .cards .card svg {
+  flex-basis: 20%;
+  height: 80px;
+}
+
+.container .central section.banner .baixo .cards .card svg g path:hover {
+  fill: #ff0000 !important;
+}
+
+.container .central section.banner .baixo .cards .card .card_text {
+  flex-basis: 60%;
+}
+
+.container .central section.banner .baixo .cards .card .card_text a {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.container .central section.banner .baixo .cards .card .card_text a svg {
+  flex-basis: 20%;
+}
+
+/* main primeira sessão */
+
+main section.viagens {
+  padding-top: 5rem;
+}
+
+main section.viagens .central header {
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main section.viagens .central header h2 {
+  text-transform: uppercase;
+
+  margin-bottom: 1.5rem;
+}
+
+main section.viagens .central .content {
+  padding: 5rem 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+main section.viagens .central .content img {
+  width: 230px;
+  height: 400px;
+  background-color: #ff0000;
+
+  border-radius: 8px;
+  transition: 500ms;
+}
+
+main section.viagens .central .content img:hover {
+  transform: scale(1.1);
+}
+/* sessão descubra */
+/* Descubra  */
+main section.Descubra {
+  padding: 5rem 0px;
+
+  background: linear-gradient(183deg, #0202aa2d, #00000046),
+    url(/img/Camada\ 0.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: #fff;
+}
+
+main section.Descubra .central header h2 {
+  width: 50%;
+
+  text-transform: uppercase;
+  font-size: 3.5rem;
+}
+
+main section.Descubra .central .content {
+  display: flex;
+}
+
+main section.Descubra .central .content .left {
+  padding-top: 2rem;
+
+  width: 40%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+main section.Descubra .central .content .left a {
+  color: #fff;
+
+  width: 40%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main section.Descubra .central .content .left p {
+  width: 75%;
+  margin: 2rem 0px;
+}
+
+main section.Descubra .central .content .right {
+  padding-top: 2rem;
+
+  width: 60%;
+  height: 280px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+main section.Descubra .central .content .right .video {
+  border-radius: 8px;
+
+  background-color: aqua;
+  width: 800px;
+  height: 200px;
+}
+
+/* footer */
+footer {
+  padding: 2rem 0rem;
+}
+
+footer .central .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

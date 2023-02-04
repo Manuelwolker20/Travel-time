@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: Myfonte;
+}
+
+@font-face {
+  font-family: Myfonte;
+  src: url(../font/Ubuntu-Regular.ttf);
+}
+
+ul,
+nav {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+.central {
+  width: 85%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  height: auto;
+
+  background-color: blue;
+
+  background: linear-gradient(183deg, #0202aa2d, #00000046),
+    url(/img/Camada\ 1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: white;
+}
